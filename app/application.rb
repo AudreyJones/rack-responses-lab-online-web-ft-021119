@@ -8,7 +8,7 @@ class Application
 
     resp.write "The time is now: #{runtime}"
 
-    if runtime <= 12
+    if runtime.hour <= 12
       resp.write "Good Morning!"
     else
       resp.write "Good Afternoon!"
