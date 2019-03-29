@@ -1,7 +1,7 @@
 require 'pry'
 class Application
   def call(env)
-    
+
     resp = Rack::Response.new
     runtime = time.hour
     binding.pry
