@@ -1,7 +1,7 @@
 class Application
   def call
     resp = Rack::Response.new
-    runtime = time.
+    runtime = time.now
 
     if runtime < 12:00pm
       resp.write "Good Morning!"
