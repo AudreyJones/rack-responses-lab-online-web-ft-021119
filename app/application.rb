@@ -1,6 +1,7 @@
 require 'pry'
 class Application
-  def call()
+  def call(thing)
+    binding.pry
     resp = Rack::Response.new
     runtime = time.hour
     resp.write "The time is now: #{runtime}"
