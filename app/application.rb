@@ -5,7 +5,7 @@ class Application
     resp = Rack::Response.new
     binding.pry
     runtime = time.hour
-    
+
     resp.write "The time is now: #{runtime}"
 
     if runtime <= 12
