@@ -1,9 +1,10 @@
 require 'pry'
 class Application
   def call(env)
-    binding.pry
+    
     resp = Rack::Response.new
     runtime = time.hour
+    binding.pry
     resp.write "The time is now: #{runtime}"
 
     if runtime <= 12
