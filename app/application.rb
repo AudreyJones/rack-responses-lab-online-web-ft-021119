@@ -3,7 +3,7 @@ class Application
   def call(env)
 
     resp = Rack::Response.new
-    
+
     runtime = Time.now
 
     resp.write "The time is now: #{runtime}\n"
