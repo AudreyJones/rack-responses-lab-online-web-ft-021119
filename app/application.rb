@@ -3,8 +3,9 @@ class Application
   def call(env)
 
     resp = Rack::Response.new
-    runtime = time.hour
     binding.pry
+    runtime = time.hour
+    
     resp.write "The time is now: #{runtime}"
 
     if runtime <= 12
