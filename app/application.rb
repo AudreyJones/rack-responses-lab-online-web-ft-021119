@@ -4,7 +4,7 @@ class Application
     runtime = time.hour
     resp.write "The time is now: #{runtime}"
 
-    if runtime < 12
+    if runtime <= 12
       resp.write "Good Morning!"
     else
       resp.write "Good Afternoon!"
