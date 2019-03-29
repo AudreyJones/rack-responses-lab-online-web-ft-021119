@@ -7,7 +7,7 @@ class Application
     runtime = Time.now
 
     resp.write "The time is now: #{runtime}\n"
-binding.pry
+
     if runtime.hour <= 12
       resp.write "Good Morning!"
     else
