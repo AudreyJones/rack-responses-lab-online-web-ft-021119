@@ -4,7 +4,7 @@ class Application
 
     resp = Rack::Response.new
     binding.pry
-    runtime = Time.new
+    runtime = Time.now
 
     resp.write "The time is now: #{runtime}"
 
